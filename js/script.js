@@ -37,7 +37,7 @@ setTimeout(function() {
         //Controllo che i numeri inseriti dall'utente siano presenti nell'array generato
         //Se sono presenti li pusho
         for (let i = 0; i < 5; i++) {
-            if (listNumbers.includes(UserNumberList[i])) {
+            if (listNumbers.includes(UserNumberList[i])  && !rightNumbers.includes(UserNumberList[i])) {
                 rightNumbers.push(UserNumberList[i]);
             }
         }
